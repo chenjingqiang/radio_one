@@ -1,0 +1,203 @@
+/**index.wxss**/
+.container{
+  padding-bottom: 100rpx;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.list{
+  width: 680rpx;
+  height: 224rpx;
+  border-bottom: 1rpx solid#DDDDDD;
+  margin: 0 auto;
+  padding-top: 30rpx;
+  box-sizing: border-box;
+}
+.list_l{
+  width: 120rpx;
+  float: left;
+  position: relative;
+}
+.list_c{
+  width: 368rpx;
+  height: 120rpx;
+  float: left;
+  margin-left: 30rpx;
+  padding-top: 10rpx;
+}
+.title{
+  font-size: 32rpx;
+  line-height: 32rpx;
+  color: #111111;
+  height: 32rpx;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+  font-weight: bold;
+}
+.name{
+  width: 100%;
+  overflow: hidden;
+  font-size: 28rpx;
+  color: #999999;
+}
+.touxiang{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius:50%;
+  background-size: cover; 
+}
+.n_n{
+  position: absolute;
+  top: 88rpx;
+  left: 94rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+.btn{
+  float: right;
+  width: 160rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #E1E9FD;
+  border-radius: 30rpx;
+  font-size: 26rpx;
+  color: #5885EE;
+  margin-top: 32rpx;
+  text-align: center;
+}
+.btn2{
+  float: right;
+  width: 160rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #799DF1;
+  border-radius: 30rpx;
+  font-size: 26rpx;
+  color: #ffffff;
+  margin-top: 32rpx;
+  text-align: center;
+}
+.btn3{
+  float: right;
+  width: 160rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #FFCAC6;
+  border-radius: 30rpx;
+  font-size: 26rpx;
+  color: #FF4141;
+  margin-top: 32rpx;
+  text-align: center;
+}
+.t_b_r{
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 26rpx;
+  color: #999999;
+  letter-spacing: 0.12rpx;
+  margin-left: 152rpx;
+}
+.time{
+  float: left;
+}
+.browse{
+  border-left: 1rpx solid #ccc;
+  border-right: 1rpx solid #ccc;
+  float: left;
+  margin: 0 20rpx;
+  background: url('https://www.uear.net/img/chakan.png') no-repeat 24rpx center;
+  background-size:28rpx 20rpx; 
+  padding-left: 64rpx;
+  padding-right: 20rpx;
+}
+.reply{
+  background: url('https://www.uear.net/img/liuyan.png') no-repeat left center;
+  background-size:24rpx 24rpx; 
+  padding-left: 40rpx;
+}
+.release{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120rpx;
+  background: rgba(255,255,255,0.8);
+  display: flex;
+  align-items:center;
+}
+.release button{
+  width: 450rpx;
+  height: 80rpx;
+  background: #799DF1;
+  border-radius: 44rpx;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  line-height: 80rpx;
+}
+.bubble{
+  width: 260rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  position: fixed;
+  bottom: 180rpx;
+  left: 50%;
+  margin-left: -130rpx;
+  background: #000;
+  font-size: 26rpx;
+  color: #fff;
+  border-radius:34rpx;
+  text-align: center; 
+  opacity: 0;
+}
+.ding{
+  position: absolute;
+  top: 30rpx;
+  right: 50rpx;
+  width: 50rpx;
+  height: 60rpx;
+}
+.ding .ding_t{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.ding_t2{
+  width: 36rpx;
+  height: 36rpx;
+  position: absolute;
+  top: -18rpx;
+  right: -18rpx;
+}
+.ding view{
+  width: 36rpx;
+  height: 36rpx;
+  position: absolute;
+  top: -18rpx;
+  right: -18rpx;
+  background: #E2442D;
+  line-height: 34rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #fff;
+  border-radius:50%;
+}
+/* .zhe{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.50);
+}
+.zhe_con{
+  margin-top: 225rpx;
+  width: 100%;
+  height:1000rpx;
+  background: #fff;
+  border: 1rpx solid red;
+} */

@@ -1,0 +1,7 @@
+<view class='start'>
+<image src='../image/start.jpg'></image>
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+  马上开始
+</button>
+</view>
+

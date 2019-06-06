@@ -1,0 +1,77 @@
+<!--pages/details/details.wxml-->
+<view class='details'>
+  <view class='tit'>
+    {{title}}
+  </view>
+  <view class='user clearfix'>
+    <view class='uesr_l'>
+      <image src='{{url}}'></image>
+      <image src='../image/nan.png' class='ding' wx-if="{{sex==1}}"></image>
+      <image src='../image/nv.png' class='ding' wx-if="{{sex==2}}"></image>
+    </view>
+    <view class='uesr_r'>
+      <view class='name'>
+        {{name}}
+      </view>
+      <view class='time'>
+        {{time}}
+      </view>
+    </view>
+  </view>
+  <view class='mp3 clearfix' bindtap='play' wx-if="{{type=='voice'}}">
+    <image src="{{dong == true? '../image/yin1.png' : '../image/yin1.gif'}}" class='yin1' ></image>
+    <text>{{miao}} ``</text>
+  </view>
+  <view  class='details_text' wx-if="{{type=='text'}}">
+    {{content}}
+  </view>
+  <view class='zhuyi clearfix'>
+    <image src='../image/tips.png' class='tips'></image>
+    注意：请不要发送政治相关以及辱骂等内容，违规内容将被删除与封禁，谢谢合作～
+  </view>
+  <view class='btn_fu clearfix'>
+    <view class='btn' wx-if="{{del}}" bindtap='shanchu'>
+      删除
+    </view>
+    <view class='btn' wx-if="{{!del}}" bindtap='huan'>
+      换一句
+    </view>
+  </view>
+  <view class='tit2 clearfix'>
+    提供的翻译
+    <view class="{{act==false ? 'act' : '' }}" data-N_H="new" bindtap="n_h">最新</view>
+    <view style='margin-right:30rpx' class="{{act==true ? 'act' : '' }}" data-N_H="hot" bindtap="n_h">最热</view>
+  </view>
+  <image src='../image/kong.png' class='kong' wx-if="{{kong}}" ></image>
+  <view>
+  <!-- list -->
+    <view class='list clearfix' wx:for="{{select}}" wx:key="key" >
+      <view class='list_l'>
+        <image src='{{item.reply_img}}'></image>
+        <image src="{{item.reply_sex == 1? '../image/nan.png' : '../image/nv.png'}}" class='ding'></image>
+      </view>
+      <view class='list_r'>
+        <view class='l_name'>{{item.reply_username}}</view>
+        <view class='l_mp3 clearfix' wx-if="{{item.reply_type=='voice'}}" bindtap='li_play' data-reply_content="{{item.reply_content}}" data-li="{{item.li}}" data-index="{{index}}">
+          <image src="{{item.li == true? '../image/yin2.png' : '../image/yin2.gif'}}" class='yin1'></image>
+          <text>{{item.reply_second}} ``</text>
+        </view>
+        <view wx-if="{{item.reply_type=='text'}}" class='li_text'>
+          {{item.reply_content}}
+        </view>
+        <view class='clearfix'>
+          <view class='l_time'>{{item.reply_datetime}}</view>
+          <view class='l_shan' wx-if="{{item.del}}" data-reply_id="{{item.reply_id}}" bindtap='l_shanchu'>删除</view>
+          <text class='zan_t'>{{item.reply_like}}</text>
+          <image class='zan' src="{{item.zan == true ? '../image/zan2.png' : '../image/zan1.png' }}" data-index="{{index}}" data-reply_id="{{item.reply_id}}" bindtap='cliak_zan'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='reply'>
+    <button bindtap='bindtap_reply'>
+      我来翻译
+    </button>
+  </view>
+  
+</view>

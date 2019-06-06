@@ -1,0 +1,108 @@
+
+.list{
+  /* width: 672rpx; */
+  padding-top: 30rpx;
+  box-sizing: border-box;
+  padding-bottom: 25rpx;
+  margin-left: 40rpx;
+}
+.list_l{
+  width: 80rpx;
+  float: left;
+  position: relative;
+}
+.list_c{
+  width: 74%;
+  float: left;
+  padding-left: 28rpx;
+  padding-bottom: 25rpx;
+}
+.list_r{
+  float: right;
+  width: 28rpx;
+  height: 28rpx;
+  margin-top: 18rpx;
+  margin-right: 40rpx;
+}
+.name{
+  width: 100%;
+  overflow: hidden;
+  font-size: 30rpx;
+  color: #444444;
+  margin-top: 2rpx;
+}
+.time{
+  font-size: 24rpx;
+  color: #888888;
+}
+.touxiang{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius:50%;
+  background-size: cover; 
+}
+.n_n{
+  position: absolute;
+  top: 56rpx;
+  left: 56rpx;
+  width: 25rpx;
+  height: 25rpx;
+}
+.t_b_r_fu{
+  width: 100%;
+  padding-left:80rpx; 
+}
+.t_b_r{
+  border-left: 6px solid #DDDDDD;
+  font-size: 34rpx;
+  color: #111111;
+  padding-left: 24rpx;
+  line-height: 34rpx;
+}
+.qiuyi_name{
+  margin-top: 14rpx;
+}
+.qiuyi_name text{
+  color: #799df1;
+}
+.bor{
+  margin-top: 25rpx;
+  margin-left: 80rpx;
+  border-bottom: 2rpx solid#DDDDDD;
+}
+.bubble{
+  width: 260rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  position: fixed;
+  bottom: 180rpx;
+  left: 50%;
+  margin-left: -130rpx;
+  background: #000;
+  font-size: 26rpx;
+  color: #fff;
+  border-radius:34rpx;
+  text-align: center; 
+  opacity: 0;
+}
+.kong{
+  display: block;
+  width: 314rpx;
+  height: 314rpx;
+  margin: 0 auto;
+  margin-top: 270rpx;
+}
+.clear{
+  width: 100rpx;
+  height: 100rpx;
+  background: rgba(255,65,65,0.30);
+  border-radius: 50%;
+  position: fixed;
+  right: 20rpx;
+  top: 50%;
+  margin-top: -50rpx;
+  font-size: 28rpx;
+  color: #FF4141;
+  text-align: center;
+  line-height: 100rpx;
+}

@@ -1,0 +1,262 @@
+/* pages/details/details.wxss */
+.details{
+  padding-bottom: 200rpx;
+}
+.tit{
+  font-size: 36rpx;
+  color: #333333;
+  font-weight: bold;
+  width: 670rpx;
+  margin: 0 auto;
+  margin-top: 78rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #ddd;
+  margin-bottom: 40rpx;
+}
+.user{
+  width: 670rpx;
+  margin: 0 auto; 
+}
+.uesr_l{
+  position: relative;
+}
+.uesr_l , .uesr_r{
+  height: 100rpx;
+  float: left
+}
+.uesr_l image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.uesr_r{
+  margin-left: 24rpx;
+}
+.uesr_l .ding{
+  position: absolute;
+  width: 27rpx;
+  height: 27rpx;
+  left: 73rpx;
+  top: 73rpx;
+}
+.name{
+  font-size: 30rpx;
+  color: #333333;
+  margin-top: 6rpx;
+  margin-bottom: 12rpx;
+}
+.time{
+  font-size: 24rpx;
+  color: #888888;
+  letter-spacing: 0.12px;
+}
+.mp3{
+  width: 670rpx;
+  height: 110rpx;
+  margin: 0 auto;
+  background: #799DF1;
+  border-radius: 8rpx; 
+  margin-top: 24rpx;
+  margin-bottom: 146rpx;
+  color: #fff;
+  line-height: 110rpx;
+  text-align: center;
+}
+.mp3 .yin1{
+  float: left;
+  width: 24rpx;
+  height: 47rpx;
+  margin-left: 46rpx;
+  margin-top: 32rpx;
+  margin-right: 226rpx;
+}
+.mp3 text{
+  float: left;
+}
+.details_text{
+  box-sizing: border-box;
+  width: 670rpx;
+  margin: 0 auto;
+  background: #e0e8fa;
+  border-radius: 8rpx; 
+  margin-top: 24rpx;
+  margin-bottom: 146rpx;
+  color: #333;
+  padding: 24rpx;
+  font-size: 32rpx;
+  word-wrap:break-word;
+}
+.zhuyi{
+  width: 670rpx;
+  margin: 0 auto;
+  font-size: 24rpx;
+  color: #888888;
+  letter-spacing: 0.11rpx;
+  line-height: 36rpx;
+  text-align: justify;
+}
+.tips{
+  float: left;
+  width: 69rpx;
+  height: 36rpx;
+  margin-top: 4rpx;
+  margin-right: 14rpx;
+}
+.btn_fu{
+  width: 670rpx;
+  margin: 60rpx auto;
+}
+.btn{
+  float: right;
+  width: 154rpx;
+  height: 50rpx;
+  border: 1rpx solid #999999;
+  border-radius: 25rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 26rpx;
+  color: #999999;
+}
+.tit2{
+  padding-bottom: 14rpx;
+  border-bottom: 2px solid #DDDDDD;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  font-size: 28rpx;
+  color: #333333;
+}
+.tit2 view{
+  float: right;
+  font-size: 26rpx;
+  color: #666666;
+  text-align: center;
+}
+.tit2 .act{
+  color: #FF9D4D;
+}
+.list{
+  box-sizing: border-box;
+  width: 670rpx;
+  margin: 0 auto;
+  padding-top: 29rpx;
+  border-bottom: 2rpx solid #DDDDDD;
+  padding-bottom: 30rpx;
+}
+.list_l{
+  float: left;
+  position: relative;
+  padding-top: 30rpx;
+}
+.list_l image{
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+}
+.list_l .ding{
+  width: 24rpx;
+  height: 24rpx;
+  top: 78rpx;
+  left: 48rpx;
+  position: absolute;
+}
+.list_r{
+  width: 570rpx;
+  float: left;
+  margin-left: 20rpx;
+}
+.l_name{
+  font-size: 26rpx;
+  color: #333333;
+}
+.l_name_zi{
+  font-size: 26rpx;
+  color: #FF9D4D;
+}
+.l_mp3{
+  width: 268rpx;
+  height: 72rpx;
+  background: #BCD0FD;
+  border-radius: 8rpx;
+  margin-top: 12rpx;
+  margin-bottom: 30rpx;
+  color: #5081F3;
+  line-height: 72rpx;
+}
+.l_mp3 image{
+  float: left;
+  width: 20rpx;
+  height: 32rpx;
+  margin-left: 32rpx;
+  margin-right: 16rpx;
+  margin-top: 20rpx;
+}
+.l_mp3 text{
+  float: left;
+  font-size: 24rpx;
+  color: #5081F3;
+}
+.l_time{
+  float: left;
+  font-size: 24rpx;
+  color: #777777;
+}
+.l_shan{
+  float: left;
+  font-size: 24rpx;
+  color: #799DF1;
+  margin-left: 70rpx;
+  margin-right: 250rpx;
+}
+.zan{
+  float: right;
+  width: 29rpx;
+  height: 32rpx;
+  padding: 10rpx;
+}
+.zan_t{
+  float: right;
+  line-height: 52rpx;
+  height: 52rpx;
+  font-size: 24rpx;
+  color: #999999;
+  margin-left: 16rpx;
+}
+.kong{
+  display: block;
+  width: 314rpx;
+  height: 314rpx;
+  margin: 0 auto;
+  margin-top: 114rpx;
+}
+.reply{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120rpx;
+  background: rgba(255,255,255,0.8);
+  display: flex;
+  align-items:center;
+}
+.reply button{
+  width: 450rpx;
+  height: 80rpx;
+  background: #fff;
+  border-radius: 44rpx;
+  font-size: 32rpx;
+  color: #799DF1;
+  line-height: 80rpx;
+  border: 1px solid #799DF1;
+}
+.li_text{
+  box-sizing: border-box;
+  width: 514rpx;
+  background: #e0e8fa;
+  padding: 18rpx;
+  font-size: 30rpx;
+  color: #333333;
+  margin-top: 12rpx;
+  margin-bottom: 30rpx;
+  border-radius: 8rpx;
+  word-wrap:break-word;
+}

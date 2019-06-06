@@ -1,0 +1,35 @@
+<!--pages/notice/notice.wxml-->
+<view class='notice'>
+  <view class="list" wx:for="{{selectall}}" wx:key="key">
+      <view class='clearfix'>
+        <view class="list_l"  data-postId="{{item.reply_id}}" data-qiuyi_id="{{item.qiuyi_id}}" bindtap='read'>
+          <image class='touxiang' src="{{item.reply_img}}"></image>
+          <image class="n_n" src="{{item.reply_sex == 1? '../image/nan.png' : '../image/nv.png'}}"></image>
+        </view>
+        <view class='list_c' data-postId="{{item.reply_id}}" data-qiuyi_id="{{item.qiuyi_id}}" bindtap='read'>
+          <view class='time'>{{item.reply_datetime}}</view>
+          <view class='name'>昵称：{{item.reply_username}}</view>
+        </view>
+        <image class='list_r' src='../image/guanbi.png' data-postId="{{item.reply_id}}" bindtap='re_notice'>
+        </image>
+      </view>
+      <view class='t_b_r_fu'>
+        <view class='t_b_r' data-postId="{{item.reply_id}}" data-qiuyi_id="{{item.qiuyi_id}}" bindtap='read'>
+          <view class='qiuyi'>回复了您的求译</view>
+          <view class='qiuyi_name'>求译名:
+            <text>{{item.qiuyi_title}}</text>
+          </view>
+        </view>
+      </view>
+      
+      <view class='bor'>
+        </view>
+  </view>
+  <view class='bubble' animation="{{animationData}}">
+    没用更多数据了
+  </view>
+  <image src='../image/kong.png' class='kong' wx-if="{{kong}}" ></image>
+  <view class='clear' wx-if="{{clear}}" bindtap='clear' >
+    清除
+  </view>
+</view>

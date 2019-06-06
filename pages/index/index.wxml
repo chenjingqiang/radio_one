@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="list" wx:for="{{selectall}}" wx:key="key">
+    <view class='clearfix'>
+      <view class="list_l"  data-postId="{{item.id}}"  data-status="{{item.status}}" bindtap='aleId'>
+        <image class='touxiang' src="{{item.img}}"></image>
+        <image class="n_n" src="{{item.sex == 1? '../image/nan.png' : '../image/nv.png'}}"></image>
+      </view>
+      <view class='list_c' data-postId="{{item.id}}"  data-status="{{item.status}}" bindtap='aleId'>
+        <view class='title'>{{item.title}}</view>
+        <view class='name'>昵称：{{item.username}}</view>
+      </view>
+      <view class='btn' wx-if="{{item.status==0}}" >我来翻译</view>
+      <view class='btn2' wx-if="{{item.status==2}}">已翻译</view>
+      <view class='btn3' wx-if="{{item.status==1}}" data-postId="{{item.id}}" bindtap='shanchu'>删除</view>
+    </view>
+    <view class='t_b_r'>
+        <text class='time'>{{item.datetime}}</text>
+        <text class='browse'>{{item.browse}}</text>
+        <text class='reply'>{{item.reply}}</text>
+      </view>
+  </view>
+  <view class='release'>
+    <button bindtap='bindtap_release'>
+      一句求译
+    </button>
+    <view class='ding' bindtap='click_notice'>
+      <image src='../image/tongzhi.png' class='ding_t'></image>
+      <image src='../image/nine.png' class='ding_t2' wx-if="{{nine}}"></image>
+      <view wx-if="{{notice}}">{{notice_num}}</view>
+    </view>
+  </view>
+  <view class='bubble' animation="{{animationData}}">
+    没用更多数据了
+  </view>
+</view>

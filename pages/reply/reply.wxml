@@ -1,0 +1,48 @@
+<!--pages/reply/reply.wxml-->
+<view class='reply'>
+  <view class='xuanze clearfix' wx-if="{{lu_sta=='1'||lu_sta=='3'}}">
+    <view class="{{xuanze == true ? 'act':''}}" bindtap='change_xuanze' data-change_type="mp3">
+      语音输入
+    </view>
+    <view class="{{xuanze == !true ? 'act':''}}" bindtap='change_xuanze' data-change_type="tet">
+      文字输入
+    </view>
+  </view>
+  <view  wx-if="{{yuyin}}">
+    <view class='top' wx-if="{{lu_sta=='1'}}" >
+      <text class='qiuyi'>请大声说出您提供的翻译内容</text>
+      <image src='../image/start.png' class='start' bindtap='start' ></image>
+      <view class='btn'>点击开始</view>
+    </view>
+    <view class='top2 top' wx-if="{{lu_sta=='2'}}">
+      <text class='qiuyi'>请大声说出您提供的翻译内容</text>
+      <image class='ong' src='../image/ong.gif' ></image>
+      <text class='miao' style='opacity:0;' >{{miao}}</text>
+      <image src='../image/end.png' class='start' bindtap='stop'></image>
+      <view class='btn'>点击结束</view>
+    </view>
+    <view class='top3 top' wx-if="{{lu_sta=='3'}}">
+      <text class='qiuyi'>可以试听自己的求译内容哦</text>
+      <view class='play clearfix' bindtap='play'>
+        <text> {{miao}}``</text>
+        <image src="{{show_dong ? '../image/miao.png' : '../image/miao.gif'}}" class='miao'></image>
+      </view>
+      <image src='../image/chong.png' class='start' bindtap='chong'  style='width:100rpx;height:111rpx;'></image>
+      <view class='btn'>点击重录</view>
+    </view>
+    
+  </view>
+  <view class='wenzi' wx-if="{{!yuyin}}">
+    <text>请输入您提供的翻译内容，切记不要恶意灌水哦~</text>
+    <textarea placeholder='这里可以写下您的具体内容，比如“我非常喜欢旅游”这句话用英语怎么说' bindinput="te_change" value='{{te_value}}'></textarea>
+    <text class='tishi2' wx-if="{{tishi_t2}}">您的描述中存在敏感性词汇请检查后重新填写</text>
+    <text class='tishi2' wx-if="{{!tishi_t2}}"></text>
+  </view>
+  <view class='zhuyi clearfix'>
+    <image src='../image/tips.png' class='tips'></image>
+    注意：请不要发送政治相关以及辱骂等内容，违规内容将被删除与封禁，谢谢合作～
+  </view>
+  <view class="{{sub_t == true ? 'sub':'sub2'}}" bindtap='suba'>
+    发布
+  </view>
+</view>
